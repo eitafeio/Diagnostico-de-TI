@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Diagnóstico de TI</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
   <h1>Diagnóstico Inicial de Problemas de TI</h1>
@@ -28,6 +29,7 @@
   </form>
 
   {% if diagnostico %}
+  <div class= "resultado">
     <h2>Resultado:</h2>
     <p><strong>{{ diagnostico }}</strong></p>
   {% endif %}
