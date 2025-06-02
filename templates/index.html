@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Diagnóstico de TI</title>
+</head>
+<body>
+  <h1>Diagnóstico Inicial de Problemas de TI</h1>
+  <form method="post">
+    <p>1. Você está com acesso à internet?</p>
+    <label><input type="radio" name="internet" value="sim" required> Sim</label>
+    <label><input type="radio" name="internet" value="nao"> Não</label>
+
+    <p>2. O computador está lento?</p>
+    <label><input type="radio" name="lento" value="sim" required> Sim</label>
+    <label><input type="radio" name="lento" value="nao"> Não</label>
+
+    <p>3. Você percebe janelas ou mensagens estranhas?</p>
+    <label><input type="radio" name="estranhas" value="sim" required> Sim</label>
+    <label><input type="radio" name="estranhas" value="nao"> Não</label>
+
+    <p>4. Você reiniciou o computador?</p>
+    <label><input type="radio" name="reiniciou" value="sim" required> Sim</label>
+    <label><input type="radio" name="reiniciou" value="nao"> Não</label>
+
+    <br><br>
+    <button type="submit">Obter diagnóstico</button>
+  </form>
+
+  {% if diagnostico %}
+    <h2>Resultado:</h2>
+    <p><strong>{{ diagnostico }}</strong></p>
+  {% endif %}
+</body>
+</html>
