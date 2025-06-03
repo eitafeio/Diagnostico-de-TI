@@ -15,14 +15,16 @@ def index():
              
         if r1 == 'nao':
             diagnostico = "Verifique se o cabo de rede está conectado ou tente reiniciar o modem."
-        elif r2 == 'sim' and r3 == 'sim':
+        elif r3 == 'sim':
             diagnostico = "Pode ser vírus. Faça uma varredura com um antivírus confiável."
         elif r2 == 'sim':
-            diagnostico = "Reinicie o computador e feche programas desnecessários."
+            diagnostico = "E necessario realizar uma otimização!"
+        elif r4 == 'sim':
+            diagnostico = "Não foi possível identificar o problema. Contate o suporte técnico."
         elif r4 == 'nao':
             diagnostico = "Tente reiniciar o computador. Isso resolve muitos problemas."
         else:
-            diagnostico = "Não foi possível identificar o problema. Contate o suporte técnico."
+            diagnostico = ""
 
     return render_template('index.html', diagnostico=diagnostico)
 
