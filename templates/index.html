@@ -5,12 +5,13 @@
   <title>Diagnóstico de TI</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
   <h1>Diagnóstico Inicial de Problemas de TI</h1>
   <form method="post">
-    <p>1. Você está com acesso à internet?</p>
-    <label><input type="radio" name="internet" value="sim" required> Sim</label>
-    <label><input type="radio" name="internet" value="nao"> Não</label>
+    <p>1. Você está com problemas na impressora?</p>
+    <label><input type="radio" name="impressora" value="sim" required> Sim</label>
+    <label><input type="radio" name="impressora" value="nao"> Não</label>
 
     <p>2. O computador está lento?</p>
     <label><input type="radio" name="lento" value="sim" required> Sim</label>

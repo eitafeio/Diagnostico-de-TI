@@ -7,14 +7,14 @@ def index():
     diagnostico = None
 
     if request.method == 'POST':
-        r1 = request.form.get('internet')
+        r1 = request.form.get('impressora')
         r2 = request.form.get('lento')
         r3 = request.form.get('estranhas')
         r4 = request.form.get('reiniciou')
 
              
-        if r1 == 'nao':
-            diagnostico = "Verifique se o cabo de rede está conectado ou tente reiniciar o modem."
+        if r1 == 'sim':
+            diagnostico = "Verifique se a impressora está ligada, conectada corretamente ao computador e sem filas de impressão travadas."
         elif r3 == 'sim':
             diagnostico = "Pode ser vírus. Faça uma varredura com um antivírus confiável."
         elif r2 == 'sim':
