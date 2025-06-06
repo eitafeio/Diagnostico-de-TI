@@ -1,67 +1,52 @@
-Diagnóstico de TI com Flask
+# Diagnóstico de TI com Flask
+
 Este projeto é uma aplicação web simples, construída com o framework Flask, que ajuda os usuários a diagnosticar problemas comuns em computadores e impressoras. Através de um formulário interativo, a aplicação coleta respostas do usuário e oferece sugestões para possíveis soluções, baseadas nas condições definidas.
 
-Funcionalidade
+## Funcionalidade
+
 A aplicação permite que os usuários respondam a perguntas sobre problemas com impressoras, lentidão do computador, mensagens estranhas ou necessidade de reinicialização. Com base nas respostas fornecidas, um diagnóstico é gerado e exibido na página.
 
-Casos de Uso
-Diagnóstico rápido de problemas comuns em computadores e impressoras.
+## Casos de Uso
 
-Suporte técnico inicial em ambientes domésticos ou corporativos.
+- Diagnóstico rápido de problemas comuns em computadores e impressoras.
+- Suporte técnico inicial em ambientes domésticos ou corporativos.
+- Educação e treinamento sobre diagnóstico de problemas de TI.
+- Ferramenta de auxílio para profissionais de TI ao identificar problemas simples.
 
-Educação e treinamento sobre diagnóstico de problemas de TI.
+## Tecnologias Usadas
 
-Ferramenta de auxílio para profissionais de TI ao identificar problemas simples.
+- **Python (Backend)**: A aplicação é construída em Python utilizando o framework Flask.
+- **Flask**: Framework web que permite a criação rápida de servidores e tratamento de requisições HTTP.
+- **HTML**: Para estruturar a interface de usuário e exibir o formulário.
+- **CSS**: Para estilizar o formulário e a página de resultados.
 
-Tecnologias Usadas
-Python (Backend): A aplicação é construída em Python utilizando o framework Flask.
+## Como Rodar o Projeto
 
-Flask: Framework web que permite a criação rápida de servidores e tratamento de requisições HTTP.
+### Pré-requisitos
 
-HTML: Para estruturar a interface de usuário e exibir o formulário.
+- Python 3.x ou superior.
+- Flask (pode ser instalado via pip).
 
-CSS: Para estilizar o formulário e a página de resultados.
+### Passos para rodar
 
-Como Rodar o Projeto
-Pré-requisitos
-Python 3.x ou superior.
+1. Clone o repositório:
 
-Flask (pode ser instalado via pip).
+   ```bash
+   git clone https://github.com/seu-usuario/diagnostico-ti-flask.git
+   cd diagnostico-ti-flask
+2. Instale as dependências:
 
-Passos para rodar
-Clone o repositório:
+   ```bash
+   pip install flask
+3. Execute o servidor Flask:
 
-bash
-Copiar
-git clone https://github.com/seu-usuario/diagnostico-ti-flask.git
-cd diagnostico-ti-flask
-Instale as dependências:
+   ```bash
+   python app.py
+4. Abra seu navegador e vá até http://127.0.0.1:5000/ para acessar a aplicação.
 
-bash
-Copiar
-pip install -r requirements.txt
-Caso o requirements.txt não esteja presente, instale o Flask diretamente:
+## Tecnologias Usadas
 
-bash
-Copiar
-pip install flask
-Execute o servidor Flask:
-
-bash
-Copiar
-python app.py
-Abra seu navegador e vá até http://127.0.0.1:5000/ para acessar a aplicação.
-
-Estrutura de Arquivos
-app.py: Arquivo principal da aplicação Flask, contendo a lógica de backend.
-
-templates/index.html: Template HTML com o formulário e a exibição do diagnóstico.
-
-static/style.css: Arquivo CSS para estilizar a página.
-
-Como Funciona
-Página Inicial: Ao acessar a aplicação, o usuário verá um formulário com quatro perguntas sobre o estado de seu computador ou impressora.
-
-Preenchimento do Formulário: O usuário seleciona as respostas (Sim ou Não) para cada pergunta e envia o formulário.
-
-Diagnóstico: Com base nas respostas, a aplicação gera um diagnóstico e o exibe na página de resultados.
+- **Python (Backend)**: A aplicação é construída em Python utilizando o framework Flask.
+- **Flask**: Framework web que permite a criação rápida de servidores e tratamento de requisições HTTP.
+- **HTML**: Para estruturar a interface de usuário e exibir o formulário.
+- **CSS**: Para estilizar o formulário e a página de resultados.
